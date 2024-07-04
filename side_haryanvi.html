@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <title>Haryanvi Songs</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.952);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+        }
+
+        header {
+            background-color: rgb(10, 139, 36);
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px white solid;
+        }
+
+        header img {
+            height: 32px;
+            width: 40px;
+        }
+
+        #banner {
+            height: 32px;
+            width: 100px;
+        }
+
+        .navlink {
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+            padding: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        .navlink:hover {
+            color: maroon;
+        }
+
+        #searchfield {
+            border: none;
+            border-radius: 1rem;
+            padding: 3px 8px;
+        }
+
+        #searchfield:focus {
+            outline: none;
+        }
+
+        h3 {
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
+        h2 {
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
+        .contents {
+            display: flex;
+            justify-content: space-around;
+        }
+        .contents img {
+            height: 150px;
+            width: 220px;
+            border-radius: 10px;
+        }
+        audio {
+            height: 1.8rem;
+            width: 15.5rem;
+            padding-bottom: 5px;
+        }
+        .item {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="images\main_logo.png">
+            <img src="images\main_banner.png" id="banner">
+        </div>
+        <div>
+            <a href="index.html" class="navlink">Home</a>
+            <a href="login.html" class="navlink">Login</a>
+            <a href="signup.html" class="navlink">Signup</a>
+            <form action="search.html">
+                <input type="text" placeholder="Search" id="searchfield">
+            </form>
+        </div>
+    </header>
+    <h2> Latest Haryanvi Songs</h2>
+    <div class="contents">
+        <div class="item">
+                <img src="images/cd.jpg">
+                <h3>System Pa System</h3>
+                <audio controls>
+                    <source src="audio/haryanvi-songs/System-Pa-System(PagalWorld).mp3" type="audio/mpeg">
+                </audio>
+        </div>
+        <div class="item">
+            <img src="images/cd.jpg">
+            <h3>Dabya Ni Karde</h3>
+            <audio controls>
+                <source src="audio/haryanvi-songs/Dabya Ni Karde Ndee Kundu 128 Kbps.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="item">
+            <img src="images/cd.jpg">
+            <h3>2 Gulaab</h3>
+            <audio controls>
+                <source src="audio/haryanvi-songs/2 Gulaab_64(PagalWorld.com.sb).mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="item">
+            <img src="images/cd.jpg">
+            <h3>Gaadi Nuye Chalegi</h3>
+            <audio controls>
+                <source src="audio/haryanvi-songs/Gaadi Nuye Chalegi R Maan 128 Kbps.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="item">
+                <img src="images/cd.jpg">
+                <h3>Kale Kagaz</h3>
+                <audio controls>
+                    <source src="audio/haryanvi-songs/Kale-Kagaz(PagalNew.Com.Se).mp3" type="audio/mpeg">
+                </audio>
+        </div>
+        <div class="item">
+            <img src="images/cd.jpg">
+            <h3>Gypsy</h3>
+            <audio controls>
+                <source src="audio/haryanvi-songs/Gypsy(PaglaSongs).mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="item">
+            <img src="images/cd.jpg">
+            <h3>Been</h3>
+            <audio controls>
+                <source src="audio/haryanvi-songs/Been R Maan 128 Kbps.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="item">
+            <img src="images/cd.jpg">
+            <h3>Aashiq</h3>
+            <audio controls>
+                <source src="audio/haryanvi-songs/_Aashiq_64(PagalWorld.com.sb).mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiosoon</title>
+    <style>
+        body {
+            background-color: #101010;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+        }
+
+        header {
+            background-color: rgb(10, 139, 36);
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px white solid;
+        }
+
+        h2 {
+            margin: 0;
+            text-align: center;
+        }
+
+        header img {
+            height: 32px;
+            width: 40px;
+        }
+
+        #banner {
+            height: 32px;
+            width: 100px;
+        }
+
+        .navlink {
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+            padding: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        .navlink:hover {
+            color: maroon;
+        }
+
+        #searchfield {
+            border: none;
+            border-radius: 1rem;
+            padding: 3px 8px;
+        }
+
+        #searchfield:focus {
+            outline: none;
+        }
+        .navbar {
+            display: flex;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        .container h2 {
+            margin: 0;
+            text-align: center;
+            color: white;
+        }
+        .container audio {
+            height: 1.8rem;
+            width: 315px;
+        }
+        .container img {
+            height: 180px;
+            border-radius: 20px
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="images\main_logo.png">
+            <img src="images\main_banner.png" id="banner">
+        </div>
+        <div class="navbar">
+            <a href="index.html" class="navlink">Home</a>
+            <a href="login.html" class="navlink">Login</a>
+            <a href="signup.html" class="navlink">Signup</a>
+            <form action="search.html">
+                <input type="text" name="search" placeholder="Search" id="searchfield">
+            </form>
+        </div>
+    </header>
+    <div class="container"></div>
+    <script src="search.js"></script>
+</body>
+</html>

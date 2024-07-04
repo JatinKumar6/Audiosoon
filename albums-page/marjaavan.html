@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Audiosoon</title>
+    <style>
+        body {
+            background-color: #101010;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+        }
+
+        header {
+            background-color: rgb(10, 139, 36);
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px white solid;
+        }
+
+        h2 {
+            margin: 0;
+            text-align: center;
+            color: white;
+        }
+
+        h3 {
+            margin: 0;
+            color: white;
+        }
+
+        header img {
+            height: 32px;
+            width: 40px;
+        }
+
+        #banner {
+            height: 32px;
+            width: 100px;
+        }
+
+        .navlink {
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+            padding: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        .navlink:hover {
+            color: maroon;
+        }
+
+        #searchfield {
+            border: none;
+            border-radius: 1rem;
+            padding: 3px 8px;
+        }
+
+        #searchfield:focus {
+            outline: none;
+        }
+        .flex-box {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        .flex-box img {
+            border-radius: 15px;
+        }
+        .flex-box h3 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }           
+        .song-box {
+            display: flex;
+            text-align: center;
+            gap:5px;
+        } 
+        .item img {
+            height : 150px;
+            width : 220px;
+            border-radius : 15px;
+        }
+        .item audio {
+            height: 1.8rem;
+            width: 15.5rem;
+            padding-bottom: 5px;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../images\main_logo.png">
+            <img src="../images\main_banner.png" id="banner">
+        </div>
+        <div>
+            <a href="../index.html" class="navlink">Home</a>
+            <a href="../login.html" class="navlink">Login</a>
+            <a href="../signup.html" class="navlink">Signup</a>
+            <form action="search.html">
+                <input type="text" placeholder="Search" id="searchfield">
+            </form>
+        </div>
+    </header>
+    <div class="flex-box">
+        <div class="main-img">
+            <img src="../images/marjaavan.jpg">
+            <h3>Marjaavan</h3>
+        </div>
+    </div>
+    <div>
+        <h1>Songs</h1>
+        <div>
+            <div class="song-box">
+                <div class="item">
+                    <img src="../images/cd.jpg">
+                    <h3>Tum Hi Aana</h3>
+                    <audio controls> 
+                        <source src="../audio/albums/marjaavan/Tum Hi Aana - Marjaavaan (2019).mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="item">
+                    <img src="../images/cd.jpg">
+                    <h3>Thodi Jagah</h3>
+                    <audio controls> 
+                        <source src="../audio/albums/marjaavan/Thodi Jagah - Marjaavaan (2019).mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="item">
+                    <img src="../images/cd.jpg">
+                    <h3>Kinna Sona</h3>
+                    <audio controls> 
+                        <source src="../audio/albums/marjaavan/Kinna Sona - Marjaavaan (2019).mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="item">
+                    <img src="../images/cd.jpg">
+                    <h3>Ek Toh Kum Zindagani</h3>
+                    <audio controls> 
+                        <source src="../audio/albums/marjaavan/Ek Toh Kum Zindagani - Marjaavaan (2019).mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

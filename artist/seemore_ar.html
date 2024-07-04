@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Audiosoon</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.952);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+        }
+
+        header {
+            background-color: rgb(10, 139, 36);
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px white solid;
+        }
+
+        header img {
+            height: 32px;
+            width: 40px;
+        }
+        .navbar {
+            display: flex;
+        }
+
+        #banner {
+            height: 32px;
+            width: 100px;
+        }
+
+        .navlink {
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+            padding: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        .navlink:hover {
+            color: maroon;
+        }
+
+        #searchfield {
+            border: none;
+            border-radius: 1rem;
+            padding: 3px 8px;
+        }
+
+        #searchfield:focus {
+            outline: none;
+        }
+
+        .content-wrapper {
+            flex-grow: 1;
+            margin: 0;
+        }
+
+        .content-item h1 {
+            text-align: center;
+            padding: 10px 10px;
+            color: white;
+            margin: 0;
+        }
+
+        .artist-list img {
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+        }
+
+        .artist-list {
+            display: flex;
+            justify-content: space-around;
+            margin: 5px;
+        }
+
+        .artist-list img {
+            transition: transform 0.15s;
+        }
+
+        .artist-list img:hover {
+            transform: scale(1.15)
+        }
+
+        .artist-list a {
+            text-decoration: none;
+        }
+
+        .artist-list a h3 {
+            text-align: center;
+            color: white;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="../images\main_logo.png">
+            <img src="../images\main_banner.png" id="banner">
+        </div>
+        <div class="navbar">
+            <a href="../index.html" class="navlink">Home</a>
+            <a href="../login.html" class="navlink">Login</a>
+            <a href="../signup.html" class="navlink">Signup</a>
+            <form action="search.html">
+                <input type="text" placeholder="Search" id="searchfield">
+            </form>
+        </div>
+    </header>
+    <div class="content-wrapper">
+        <div class="content-item">
+            <h1>Artists</h1>
+            <div class="artist-list">
+                <a href="gurnam.html">
+                    <img src="../images/gurnaam.jpg">
+                    <h3>Gurnam Bhullar </h3>
+                </a>
+                <a href="arijit.html">
+                    <img src="../images/arijit.png">
+                    <h3>Arijit Singh </h3>
+                </a>
+                <a href="guru.html">
+                    <img src="../images/guru.jpg">
+                    <h3>Guru Randhawa </h3>
+                </a>
+                <a href="jubin.html">
+                    <img src="../images/jubin.png">
+                    <h3>Jubin Nautiyal </h3>
+                </a>
+                <a href="diljit.html">
+                    <img src="../images/diljit.jpg">
+                    <h3>Diljit Dosanjh </h3>
+                </a>
+                <a href="">
+                    <img src="../images\ap_dhillon.jpg">
+                    <h3>AP Dhillon </h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="content-item">
+            <div class="artist-list">
+                <a href="">
+                    <img src="../images/stebin ben.jpg">
+                    <h3>Stebin Ben</h3>
+                </a>
+                <a href="">
+                    <img src="../images/neha kakkar.jpg">
+                    <h3>Neha Kakkar </h3>
+                </a>
+                <a href="">
+                    <img src="../images/palak muchhal.jpg">
+                    <h3>Palak Muchhal </h3>
+                </a>
+                <a href="">
+                    <img src="../images/shreya ghoshal.jpg">
+                    <h3>Shreya Ghoshal</h3>
+                </a>
+                <a href="">
+                    <img src="../images/darshan raval.jpg">
+                    <h3>Darshan Raval </h3>
+                </a>
+                <a href="">
+                    <img src="../images/ankit tiwari.jpg">
+                    <h3>Ankit Tiwari </h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>

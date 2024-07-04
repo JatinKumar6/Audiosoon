@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup page</title>
+    <style>
+        body {
+            background-color: #101010;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+        }
+
+        header {
+            background-color: rgb(10, 139, 36);
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px white solid;
+        }
+
+        header img {
+            height: 32px;
+            width: 40px;
+        }
+
+        #banner {
+            height: 32px;
+            width: 100px;
+        }
+
+        .navlink {
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+            padding: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        .navlink:hover {
+            color: maroon;
+        }
+
+        #searchfield {
+            border: none;
+            border-radius: 1rem;
+            padding: 3px 8px;
+        }
+
+        #searchfield:focus {
+            outline: none;
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .form-container {
+            display: flex;
+            background-color: #202020;
+            justify-content: center;
+            padding: 10px 2rem;
+        }
+
+        .form-container label {
+            color: white;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 1rem;
+        }
+        .form-cell input {
+            border: none;
+            border-radius: 8px;
+            padding: 4px 7px;
+
+        }
+        .form-cell input:focus {
+            outline: none;
+        }
+        .form-button-cell  {
+            text-align: center;
+        }
+        .form-button-cell button {
+            border: none;
+            border-radius:8px ;
+            padding: 6px 10px;
+            background-color:  rgb(10, 139, 36);
+            color: white;
+            font-weight:bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="images\main_logo.png">
+            <img src="images\main_banner.png" id="banner">
+        </div>
+        <div>
+            <a href="index.html" class="navlink">Home</a>
+            <a href="login.html" class="navlink">Login</a>
+            <a href="signup.html" class="navlink">Signup</a>
+            <input type="text" placeholder="Search" id="searchfield">
+        </div>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <form action="">
+                <h2>Signup</h2>
+                <div class="form-row">
+                    <div class="form-cell">
+                        <label for="fname">First Name</label><br>
+                        <input type="text" name="fname" id="fname" required>
+                    </div>
+                    <div class="form-cell">
+                        <label for="lname">Last Name</label><br>
+                        <input type="text" name="lname" id="lname" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-cell">
+                        <label for="uname">Username</label><br>
+                        <input type="text" name="uname" id="uname" required>
+                    </div>
+                    <div class="form-cell">
+                        <label for="password">Password</label><br>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-cell">
+                        <label for="confirm-password">Confirm Password</label><br>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
+                    <div class="form-cell">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-cell">
+                        <label for="Number">Mobile Number</label><br>
+                        <input type="number" name="Number" id="Number" placeholder="+91">
+                    </div>
+                    <div class="form-cell">
+                        <label for="DOB">Date of Birth </label><br>
+                        <input type="date" name="DOB" id="DOB">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-cell">
+                        <label for="gender">Gender</label><br>
+                        <select name="gender" id="gender">
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                            <option value="O">Others</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-button-cell">
+                    <button type="submit">Signup</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

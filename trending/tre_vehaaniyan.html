@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Audiosoon</title>
+    <style>
+        body {
+            background-color: #101010;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+        }
+
+        header {
+            background-color: rgb(10, 139, 36);
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px white solid;
+        }
+
+        h2 {
+            margin: 0;
+            text-align: center;
+            color: white;
+        }
+
+        h3 {
+            margin: 0;
+            /* text-align: center; */
+            color: white;
+        }
+
+        header img {
+            height: 32px;
+            width: 40px;
+        }
+
+        #banner {
+            height: 32px;
+            width: 100px;
+        }
+
+        .navlink {
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+            padding: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        .navlink:hover {
+            color: maroon;
+        }
+
+        #searchfield {
+            border: none;
+            border-radius: 1rem;
+            padding: 3px 8px;
+        }
+
+        #searchfield:focus {
+            outline: none;
+        }
+        .trend-container {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        .trend-item img {
+            height: 180px;
+            border-radius: 20px;
+        }
+        .trend-item audio {
+            height: 1.8rem;
+            width: 315px;
+        }
+        .moreUlike h2 {
+            text-align: left;
+            padding-left: 15px;
+            padding-bottom: 8px;
+        }
+        .items {
+            display: flex;   
+            text-align: center;
+            gap:5px;
+        }
+        .items img {
+            height: 150px;
+            width: 220px;
+            border-radius: 10px;
+        }
+        .items audio {
+            height: 1.8rem;
+            width: 15.5rem;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../images\main_logo.png">
+            <img src="../images\main_banner.png" id="banner">
+        </div>
+        <div>
+            <a href="../index.html" class="navlink">Home</a>
+            <a href="../login.html" class="navlink">Login</a>
+            <a href="../signup.html" class="navlink">Signup</a>
+            <form action="search.html">
+                <input type="text" placeholder="Search" id="searchfield">
+            </form>
+        </div>
+    </header>
+    <div class="trend-container">
+        <div class="trend-item">
+            <img src="../images/ve_haaniyaan.jpg">
+            <h2>Ve Haaniyaan</h2>
+            <audio controls>
+                <source src="../audio/trending-songs/Ve Haniya_64(PagalWorld.com.sb).mp3" type="audio/mpeg"> 
+            </audio>
+        </div>
+    </div>
+    <div class="moreUlike">
+        <h2>More You Like</h2>
+        <div class="items">
+            <div>
+                <img src="../images/arijit-songimages/Tere Pyaar Mein.jpg">
+                <h3>Tere Pyaar Mein</h3>
+                <audio controls>
+                    <source src="../audio/arijit-songs/Tere Pyaar Mein (RaagJatt.com).mp3" type="audio/mpeg"> 
+                </audio>
+            </div>
+            <div>
+                <img src="../images/arijit-songimages/Phir Aur Kya Chahiye.jpg">
+                <h3>Phir Aur Kya Chahiye</h3>
+                <audio controls>
+                    <source src="../audio/arijit-songs/Phir Aur Kya Chahiye (RaagJatt.com).mp3" type="audio/mpeg"> 
+                </audio>
+            </div>
+            <div>
+                <img src="../images/arijit-songimages/kesariya.jpg">
+                <h3>Kesariya</h3>
+                <audio controls>
+                    <source src="../audio/arijit-songs/Kesariya (Brahmastra) - (Raag.Fm).mp3" type="audio/mpeg"> 
+                </audio>
+            </div>
+            <div>
+                <img src="../images/arijit-songimages/chaleya.jpg">
+                <h3>Chaleya</h3>
+                <audio controls>
+                    <source src="../audio/arijit-songs/Chaleya_64(PagalWorld.com.sb).mp3" type="audio/mpeg"> 
+                </audio>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

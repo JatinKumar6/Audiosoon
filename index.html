@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Audiosoon</title>
+    <style>
+        body {
+            background-color: #101010;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+        }
+
+        header {
+            background-color: rgb(10, 139, 36);
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px white solid;
+        }
+
+        h2 {
+            margin: 0;
+            text-align: center;
+        }
+
+        header img {
+            height: 32px;
+            width: 40px;
+        }
+
+        #banner {
+            height: 32px;
+            width: 100px;
+        }
+        .navbar {
+            display: flex;
+
+        }
+        .navlink {
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+            padding: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        .navlink:hover {
+            color: maroon;
+        }
+
+        #searchfield {
+            border: none;
+            border-radius: 1rem;
+            padding: 3px 8px;
+        }
+
+        #searchfield:focus {
+            outline: none;
+        }
+
+        #sidebar {
+            background-color: #303030;
+            width: 10rem;
+        }
+
+        #sidebar ul {
+            list-style: none;
+            margin: 0;
+            padding-top: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        #sidebar ul li {
+            padding: 0.125rem 0;
+        }
+
+        #sidebar ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        #sidebar :hover {
+            color: maroon;
+            transition: color 0.3s;
+        }
+
+        .content-wrapper {
+            flex-grow: 1;
+        }
+
+        .content-item {
+            background-color: black;
+            flex-grow: 1;
+            height: 17rem;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .content-item h2 {
+            text-align: left;
+            padding: 10px 10px;
+            color: white;
+        }
+
+        .artist-list img {
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+        }
+        .artist-list{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .artist-list img {
+            transition: transform 0.15s;
+        }
+
+        .artist-list img:hover {
+            transform: scale(1.15)
+        }
+
+        .artist-list a {
+            text-decoration: none;
+        }
+        .artist-list a h3 {
+            text-align: center;
+            color: white;
+            margin: 0;
+        }
+        #morepages {
+            margin: 0;
+            text-align: right;
+            padding: 5px 10px 5px 0;
+            margin-top: 5px;
+        }
+        #morepages a {
+            text-decoration: none;
+            color: white;
+            border:2px solid grey;
+            padding: 2px 5px;
+            border-radius: 10px ;
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="images\main_logo.png">
+            <img src="images\main_banner.png" id="banner">
+        </div>
+        <div class="navbar">
+            <a href="index.html" class="navlink">Home</a>
+            <a href="login.html" class="navlink">Login</a>
+            <a href="signup.html" class="navlink">Signup</a>
+            <form action="search.html">
+                <input type="text" name="search" placeholder="Search" id="searchfield">
+            </form>
+        </div>
+    </header>
+    <div class="container">
+        
+        <div id="sidebar">
+            <ul>
+                <li>
+                    <a href="side_hindi.html">Hindi</a>
+                </li>
+                <li>
+                    <a href="side_english.html">English</a>
+                </li>
+                <li>
+                    <a href="side_punjabi.html">Punjabi</a>
+                </li>
+                <li>
+                    <a href="side_haryanvi.html">Haryanvi</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content-wrapper">
+
+            <div class="content-item">
+                <h2>Artists</h2>
+                <div class="artist-list">
+                    <a href="artist\gurnam.html">
+                        <img src="images\gurnaam.jpg">
+                        <h3>Gurnam Bhullar </h3>
+                    </a>
+                    <a href="artist\arijit.html">
+                        <img src="images\arijit.png">
+                        <h3>Arijit Singh </h3>
+                    </a>
+                    <a href="artist\guru.html">
+                        <img src="images\guru.jpg">
+                        <h3>Guru Randhawa </h3>
+                    </a>
+                    <a href="artist\jubin.html">
+                        <img src="images\jubin.png">
+                        <h3>Jubin Nautiyal </h3>
+                    </a>
+                    <a href="artist\diljit.html">
+                        <img src="images\diljit.jpg">
+                        <h3>Diljit Dosanjh </h3>
+                    </a>
+                </div>
+                <h4 id="morepages">
+                    <a href="artist/seemore_ar.html">See more</a>
+                </h4>
+            </div>
+            <div class="content-item">
+                <h2>Trending</h2>
+                <div class="artist-list">
+                    <a href="trending/tre_naina.html">
+                        <img src="images\naina.png">
+                        <h3>Naina </h3>
+                    </a>
+                    <a href="trending/tre_vehaaniyan.html">
+                        <img src="images\ve_haaniyaan.jpg">
+                        <h3>Ve Haaniyaan </h3>
+                    </a>
+                    <a href="trending/tre_soulmate.html">
+                        <img src="images\soulmate.jpg">
+                        <h3>Soulmate </h3>
+                    </a>
+                    <a href="trending/tre_gulabisadi.html">
+                        <img src="images\gulabisadi.jpg">
+                        <h3>Gulabi Sadi </h3>
+                    </a>
+                    <a href="trending/tre_laalpeeliakhiyan.html">
+                        <img src="images\laalpeeliakhiyaan.jpg">
+                        <h3>Laal Peeli Akhiyan </h3>
+                    </a>
+                </div>
+                <h4 id="morepages">
+                    <a href="trending/tre_see-more.html">See more</a>
+                </h4>
+            </div>
+            <div class="content-item">
+                <h2>Albums</h2>
+                <div class="artist-list">
+                    <a href="albums-page/animal.html">
+                        <img src="images\animal.jpg">
+                        <h3>Animal </h3>
+                    </a>
+                    <a href="albums-page/still-rollin.html">
+                        <img src="images\stillrollin.jpg">
+                        <h3>Still Rollin </h3>
+                    </a>
+                    <a href="albums-page/aashiqui2.html">
+                        <img src="images/aashiqui 2.jpg">
+                        <h3>Aashiqui 2 </h3>
+                    </a>
+                    <a href="albums-page/making-memories.html">
+                        <img src="images/making memories.jpg">
+                        <h3>Making Memories </h3>
+                    </a>
+                    <a href="albums-page/marjaavan.html">
+                        <img src="images/marjaavan.jpg">
+                        <h3>Marjaavan </h3>
+                    </a>
+                </div>
+                <h4 id="morepages">
+                    <a href="albums-page/alb_seemore.html">See more</a>
+                </h4>
+            </div>
+        </div>
+        
+        
+</body>
+
+</html>
